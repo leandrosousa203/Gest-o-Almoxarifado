@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0s">
+  <title>Gestão Almoxarifado</title>
+  <link REL="SHORTCUT ICON" HREF="./assets/risco.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body class="bg-sky-50 flex flex-col">
+
+  <!-- Configurações do menu -->
+  <section id="menu" class="fixed top-0 left-[-300px] bg-sky-300
+   h-screen w-[300px] z-50 duration-500 border-r border-sky-500 p-5 flex flex-col shadow-lg shadow-sky-400">
+  <div id="cabecalho-menu" class="flex justify-between m-3">
+    <p>Menu</p>
+    <button id="menu-fechar"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  
+  <!-- Itens de dentro do menu -->
+  <section class="flex flex-col mr-20" id="itens"> 
+    <button class="border-l mb-3 mr-15">Tickets Resolvidos</button>
+    <button class="border-l mb-3 mr-9">Meus Tickets</button>
+  </section>
+  <button class="text-[25px] p-2"><i class="fa-solid fa-cart-arrow-down"></i></button>
+  </section>
+  
+   <!-- Parte de cima da pagina 'header' -->
+  <header class="flex bg-sky-300 justify-between px-1 py-1 sticky top-0 shadow-lg shadow-sky-300/50 z-10">
+    <div class= "text-blue-900 flex gap-2 items-end mx-3">
+      <button id="menu-abrir" class="mr-2 h-8 p-1"><i class="fa-solid fa-user"></i></button>
+    </div >
+    <img class="h-16 p-2" src="./assets/transferir.png" alt="G3 Telecom">
+  </header>
+
+  <!-- Card dos produtos -->
+
+  <main class="flex flex-wrap m-3 p-10 justify-center gap-10 relative">
+    <section id="container-menu" class="flex flex-wrap p-10 mx-1 justify-center gap-5"></section>
+  </main>
+  <script type="module" src="./main.js"></script>
+  
+</body>
+</html>
+
+
+<!-- -->
